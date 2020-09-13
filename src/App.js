@@ -1,8 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 // import logo from './logo.svg';
-// import "./App.css";
-import HomePage from './components/HomePage'
+import "./App.css";
+import HomeTitle from './components/HomeTitle/HomeTitle';
+import Subtitle from './components/Subtitle/Subtitle';
 
 export default function App() {
   return (
@@ -33,8 +34,10 @@ export default function App() {
             <Users />
           </Route>
           <Route path="/">
-            <Home />
-            <HomePage />
+            <>
+              <HomeTitle />
+              <Subtitle />
+            </>
           </Route>
         </Switch>
       </div>
