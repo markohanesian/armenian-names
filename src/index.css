@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: whitesmoke;
 }
 
 code {
@@ -13,5 +14,27 @@ code {
 }
 
 nav {
-  background-color: red;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid #2e294e;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav ul li{
+  display: flex;
+  padding-right: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #2e294e;
+}
+
+nav ul li a:visited {
+  text-decoration: none;
+  font-weight: bold;
+  background-color: orange;
 }
