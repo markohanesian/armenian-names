@@ -16,7 +16,7 @@ code {
 nav {
   display: flex;
   justify-content: flex-end;
-  border-bottom: 1px solid #2e294e;
+  /* border-bottom: 1px solid #2e294e; */
 }
 
 nav ul{
@@ -31,10 +31,11 @@ nav ul li{
 nav ul li a {
   text-decoration: none;
   color: #2e294e;
+  padding: 5px;
 }
 
-nav ul li a:visited {
+nav ul li a:active {
   text-decoration: none;
   font-weight: bold;
-  background-color: orange;
+  color: #84c318;
 }
