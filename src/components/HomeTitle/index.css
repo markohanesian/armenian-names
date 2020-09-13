@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'MyFont';
+    src: local('MyFont'), url(../../fonts/NotoSansJP-Regular.otf) format('woff');
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #820263;
+    font-size: 3rem;
+    letter-spacing: .5rem;
+    font-family: MyFont;
+    /* text-transform: uppercase; */
+  }
