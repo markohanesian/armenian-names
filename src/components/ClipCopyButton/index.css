@@ -1,0 +1,39 @@
+#ccb-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+text {
+    font-weight: bo;
+}
+
+input {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: 11rem;
+    height: 3rem;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+#copy-subtext {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-bottom: 1rem;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    border: none;
+    background-color: #d90368;
+    color: white;
+    padding: 1rem;
+    width: 4rem;
+    margin-bottom: 1rem;
+}

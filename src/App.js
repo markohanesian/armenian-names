@@ -5,6 +5,7 @@ import "./App.css";
 // components
 import HomeTitle from './components/HomeTitle/HomeTitle';
 import Subtitle from './components/Subtitle/Subtitle';
+import ClipCopyButton from './components/ClipCopyButton/ClipCopyButton';
 
 export default function App() {
   return (
@@ -38,6 +39,7 @@ export default function App() {
             <>
               <HomeTitle />
               <Subtitle />
+              <ClipCopyButton />
             </>
           </Route>
         </Switch>
