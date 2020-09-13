@@ -5,10 +5,10 @@ import "./App.css";
 // components
 import HomeTitle from './components/HomeTitle/HomeTitle';
 import Subtitle from './components/Subtitle/Subtitle';
-import ClipCopyButton from './components/ClipCopyButton/ClipCopyButton';
 
 export default function App() {
   return (
+    // these are the nav contents
     <Router>
       <div>
         <nav>
@@ -39,7 +39,6 @@ export default function App() {
             <>
               <HomeTitle />
               <Subtitle />
-              <ClipCopyButton />
             </>
           </Route>
         </Switch>
@@ -49,7 +48,7 @@ export default function App() {
 }
 
 function Home() {
-  return <h2>Home</h2> ; 
+  return <h2>Home</h2>; 
 }
 
 function About() {
