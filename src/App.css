@@ -1,3 +1,13 @@
+/* importing custom font to use across entire app */
+@font-face {
+  font-family: 'MyFont';
+  src: local('MyFont'), url(/src/fonts/NotoSansJP-Regular.otf) format('woff');
+}
+
+body {
+  font-family: MyFont;
+  font-size: 12px;
+}
 .App {
   text-align: center;
 }
