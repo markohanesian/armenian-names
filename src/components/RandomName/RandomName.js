@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
 
-function RandomName(props) {
+function RandomName() {
     const [name, newName] = useState(0);
 
-    const { names } = props;
+    const names=['Paul', 'David', 'Kevin'];
+
     return (
         <div>
             <h2>{name}</h2>
@@ -14,10 +14,5 @@ function RandomName(props) {
         </div>
     );
 }
-
-ReactDOM.render(
-    <RandomName names={['Paul', 'David', 'Kevin']} />,
-    document.getElementById('root')
-);
 
 export default RandomName
