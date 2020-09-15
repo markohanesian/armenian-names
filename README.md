@@ -1,4 +1,5 @@
 # Anoon.me
+* [Deployed](https://http://www.anoon.me/
 
 ## Description
 Anoon.me is a simple Armenian name generator
@@ -8,9 +9,6 @@ I want to pick an Armenian name at random for my baby
 
 ## Instructions
 Press the button to generate a random name
-
-## Links
-* [Github](https://github.com/markohanesian/armenian-names
 
 ## Built With
 * React
