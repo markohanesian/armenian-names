@@ -1,0 +1,13 @@
+#RandomName-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    display: block;
+    border: none;
+    padding: 1rem;
+    background-color: #1C8207;
+    color: white;
+}
