@@ -1,5 +1,5 @@
 # Anoon.me
-* [Deployed](https://http://www.anoon.me/
+* [Deployed](http://www.anoon.me/)
 
 ## Description
 Anoon.me is a simple Armenian name generator
