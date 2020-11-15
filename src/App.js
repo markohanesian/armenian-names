@@ -33,7 +33,10 @@ export default function App() {
             renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/bygender">
-            <h2>This is a website to help choose an Armenian name</h2>
+            <>
+              <HomeTitle />
+              <Subtitle />
+            </>
           </Route>
           <Route path="/about">
             <h2>This is a website to help choose an Armenian name</h2>
