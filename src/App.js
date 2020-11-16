@@ -6,6 +6,9 @@ import "./App.css";
 import HomeTitle from './components/HomeTitle/HomeTitle';
 import Subtitle from './components/Subtitle/Subtitle';
 import RandomName from './components/RandomName/RandomName';
+import GenArmFemaleName from './components/GenArmFemaleName/GenArmFemaleName';
+import GenArmMaleName from './components/GenArmMaleName/GenArmMaleName';
+
 
 export default function App() {
   return (
@@ -23,9 +26,9 @@ export default function App() {
             <li>
               <Link to="/about">About</Link>
             </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
+            {/* <li>
+              <Link to="/login">Login</Link>
+            </li> */}
           </ul>
         </nav>
 
@@ -36,12 +39,22 @@ export default function App() {
             <>
               <HomeTitle />
               <Subtitle />
+              <div id="gendered-names-container">
+                <GenArmMaleName />
+                <GenArmFemaleName />
+              </div>
             </>
           </Route>
           <Route path="/about">
-            <h2>This is a website to help choose an Armenian name</h2>
+            <div style={{display: "flex", flexDirection: "column", alignItems: "center", padding: "1rem"}} >
+              <br></br>
+              <p>This is a website to help choose an Armenian name</p>
+              <p>Created by Mark Ohanesian, 2020</p>
+              <a href="github.com/markohanesian">GitHub</a>
+            </div>
+            
           </Route>
-          <Route path="/users">
+          <Route path="/login">
           </Route>
           <Route path="/">
             <>
