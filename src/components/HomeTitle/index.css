@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'MyFont';
-    src: local('MyFont'), url(../../fonts/NotoSansJP-Regular.otf) format('woff');
+    src: local('MyFont'), url(../../fonts/javatext.ttf) format('woff');
 }
 
 h1 {

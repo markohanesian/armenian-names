@@ -1,7 +1,7 @@
 /* importing custom font to use across entire app */
 @font-face {
   font-family: 'MyFont';
-  src: local('MyFont'), url(/src/fonts/NotoSansJP-Regular.otf) format('woff');
+  src: local('MyFont'), url(/src/fonts/javatext.ttf) format('woff');
 }
 
 body {
