@@ -8,6 +8,11 @@ body {
   font-family: MyFont;
   font-size: 12px;
 }
+
+ul, li {
+  padding: 0 !important;
+}
+
 .App {
   text-align: center;
 }
@@ -19,4 +24,10 @@ body {
   align-items: space-between;
   justify-content: space-between;
   padding: 1rem;
+}
+
+#bottom-navigation-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
