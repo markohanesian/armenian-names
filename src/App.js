@@ -3,9 +3,9 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 // import logo from './logo.svg';
 import "./App.css";
+// page components
+import LoginPage from './components/LoginPage'
 // COMPONENTS
-import HomeTitle from "./components/HomeTitle/HomeTitle";
-import Subtitle from "./components/Subtitle/Subtitle";
 import RandomName from "./components/RandomName/RandomName";
 import GenArmFemaleName from "./components/GenArmFemaleName/GenArmFemaleName";
 import GenArmMaleName from "./components/GenArmMaleName/GenArmMaleName";
@@ -18,8 +18,7 @@ export default function App() {
         <section>
           <Route path="/">
             <>
-              <HomeTitle />
-              <Subtitle />
+         
               <RandomName />
             </>
           </Route>
@@ -36,9 +35,9 @@ export default function App() {
               <li>
                 <Link to="/about">About</Link>
               </li>
-              {/* <li>
+              <li>
               <Link to="/login">Login</Link>
-            </li> */}
+            </li>
             </ul>
           </nav>
         </section>
@@ -48,8 +47,7 @@ export default function App() {
         <Switch>
           <Route path="/bygender">
             <>
-              <HomeTitle />
-              <Subtitle />
+    
               <div id="gendered-names-container">
                 <GenArmMaleName />
                 <GenArmFemaleName />
@@ -71,7 +69,9 @@ export default function App() {
               <a href="github.com/markohanesian">GitHub</a>
             </div>
           </Route>
-          <Route path="/login"></Route>
+          <Route path="/login">
+              <LoginPage />
+          </Route>
         </Switch>
       </div>
     </Router>
