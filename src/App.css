@@ -1,23 +1,46 @@
 /* importing custom font to use across entire app */
-@font-face {
+/* @font-face {
   font-family: 'MyFont';
-  src: local('MyFont'), url(/src/fonts/javatext.ttf) format('woff');
-}
+  src: local('MyFont'), url(/src/fonts/MarkHandwritingFont1-Regular.ttf) format('woff');
+} */
 
 body {
-  font-family: MyFont;
+  font-family: sans-serif;
   font-size: 12px;
 }
 
 ul, li {
-  padding: 0 !important;
+  padding: 1rem !important;
+  background-color: lightblue;
 }
 
+a {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  font-size: 1rem;
+  color: hotpink;
+}
+
+a:hover {
+  color: #4652FF;
+}
+
+/* DEFAULT CLASSES */
 .App {
   text-align: center;
 }
 
-/* BUTTONS */
+.grid-default {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* HOME PAGE */
 #home-button {
   border: transparent;
   padding: 0;
@@ -29,6 +52,29 @@ ul, li {
   margin: 0;
 }
 
+#home-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #4652FF;
+}
+
+.homepage-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* LOGIN PAGE */
+#login-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+}
+
+/* GENERATOR PAGE */
 #gendered-names-container {
   display: flex;
   height: 200px;
@@ -38,19 +84,14 @@ ul, li {
   padding: 1rem;
 }
 
+/* NAVIGATION */
 #bottom-navigation-group {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
-.grid-default {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  background-color: #4652FF;
-}
 
 #switch-container {
   display: flex;
