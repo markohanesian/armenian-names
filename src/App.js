@@ -4,73 +4,68 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 // import logo from './logo.svg';
 import "./App.css";
 // page components
-import LoginPage from './components/LoginPage'
+import LoginPage from "./pages/LoginPage";
+import HomePage from "./pages/HomePage";
 // COMPONENTS
-import RandomName from "./components/RandomName/RandomName";
-import GenArmFemaleName from "./components/GenArmFemaleName/GenArmFemaleName";
-import GenArmMaleName from "./components/GenArmMaleName/GenArmMaleName";
+// import RandomName from "./components/RandomName/RandomName";
+// import GenArmFemaleName from "./components/GenArmFemaleName/GenArmFemaleName";
+// import GenArmMaleName from "./components/GenArmMaleName/GenArmMaleName";
 
 export default function App() {
+  const NavBar = (
+    <nav id="bottom-navigation-group">
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/signup">Signup</Link>
+        </li>
+        <li>
+          <Link to="/login">Login</Link>
+        </li>
+        <li>
+          <Link to="/generator">Generator</Link>
+        </li>
+        <li>
+          <Link to="/favorites">Favorites</Link>
+        </li>
+      </ul>
+    </nav>
+  );
+  
   return (
     // these are the nav contents
     <Router>
       <div>
-        <section>
-          <Route path="/">
-            <>
-         
-              <RandomName />
-            </>
-          </Route>
-        </section>
-        <section id="bottom-navigation-group">
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Randomizer</Link>
-              </li>
-              <li>
-                <Link to="/bygender">By Gender</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-              <Link to="/login">Login</Link>
-            </li>
-            </ul>
-          </nav>
-        </section>
-
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/bygender">
-            <>
-    
-              <div id="gendered-names-container">
-                <GenArmMaleName />
-                <GenArmFemaleName />
-              </div>
-            </>
+          <Route path="/favorites">
+            <p>Favorites name list page</p>
+            {NavBar}
           </Route>
-          <Route path="/about">
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                padding: "1rem",
-              }}
-            >
-              <br></br>
-              <p>This is a website to help choose an Armenian name</p>
-              <p>Created by Mark Ohanesian, 2020</p>
-              <a href="github.com/markohanesian">GitHub</a>
-            </div>
+          <Route path="/generator">
+              <div id="gendered-names-container">
+                {/* <GenArmMaleName />
+                <GenArmFemaleName />
+                <RandomName /> */}
+              </div>
+              {NavBar}
           </Route>
           <Route path="/login">
-              <LoginPage />
+            <LoginPage />
+            {NavBar}
+          </Route>
+          <Route path="/signup">
+            <h1>
+              signup page
+            </h1>
+            {NavBar}
+          </Route>
+          <Route path="/">
+            <HomePage />
+            {NavBar}
           </Route>
         </Switch>
       </div>
