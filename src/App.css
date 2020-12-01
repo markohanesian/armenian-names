@@ -40,6 +40,14 @@ a:hover {
   padding: 1rem;
 }
 
+.grid-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
 /* HOME PAGE */
 #home-button {
   border: transparent;
