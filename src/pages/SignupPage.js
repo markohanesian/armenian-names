@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import { Switch, Grid, Paper } from "@material-ui/core";
+import { Switch, Grid, Paper, Typography } from "@material-ui/core";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 // main styling
 import '../App.css';
 // subcomponents
 import HomeButton from '../components/HomeButton';
-import Login from '../components/Login';
+import Signup from '../components/Signup';
 
-function LoginPage() {
+function SignupPage() {
   const [darkMode, setDarkMode] = useState(false);
 
   const theme = createMuiTheme({
@@ -44,7 +44,10 @@ function LoginPage() {
             <HomeButton />
           </Grid>
           <Grid className="grid-default">
-            <Login />
+            <Typography variant="subtitle1" gutterBottom>
+              Sign up to save your favorite baby names so you don't forget them before your baby is born
+            </Typography>
+            <Signup />
           </Grid>
         </Paper>
       </ThemeProvider>
@@ -52,4 +55,4 @@ function LoginPage() {
   );
 }
 
-export default LoginPage;
+export default SignupPage;
