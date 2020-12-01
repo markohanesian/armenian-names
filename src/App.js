@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
 // page components
 import LoginPage from "./pages/LoginPage";
+import SignupPage from "./pages/SignupPage";
 import HomePage from "./pages/HomePage";
 // COMPONENTS
 // import RandomName from "./components/RandomName/RandomName";
@@ -58,9 +59,7 @@ export default function App() {
             {NavBar}
           </Route>
           <Route path="/signup">
-            <h1>
-              signup page
-            </h1>
+            <SignupPage />
             {NavBar}
           </Route>
           <Route path="/">
