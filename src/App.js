@@ -7,10 +7,9 @@ import "./App.css";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
 import HomePage from "./pages/HomePage";
-// COMPONENTS
-// import RandomName from "./components/RandomName/RandomName";
-// import GenArmFemaleName from "./components/GenArmFemaleName/GenArmFemaleName";
-// import GenArmMaleName from "./components/GenArmMaleName/GenArmMaleName";
+// Firebase Authentication 
+import { AuthProvider } from './Auth';
+
 
 export default function App() {
   const NavBar = (
@@ -34,40 +33,43 @@ export default function App() {
       </ul>
     </nav>
   );
-  
+
   return (
     // these are the nav contents
-    <Router>
-      <div>
-        {/* A <Switch> looks through its children <Route>s and
+    // Router wrapped in authentication provider
+    <AuthProvider>
+      <Router>
+        <div>
+          {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-        <Switch>
-          <Route path="/favorites">
-            <p>Favorites name list page</p>
-            {NavBar}
-          </Route>
-          <Route path="/generator">
+          <Switch>
+            <Route path="/favorites">
+              <p>Favorites name list page</p>
+              {NavBar}
+            </Route>
+            <Route path="/generator">
               <div id="gendered-names-container">
                 {/* <GenArmMaleName />
                 <GenArmFemaleName />
                 <RandomName /> */}
               </div>
               {NavBar}
-          </Route>
-          <Route path="/login">
-            <LoginPage />
-            {NavBar}
-          </Route>
-          <Route path="/signup">
-            <SignupPage />
-            {NavBar}
-          </Route>
-          <Route path="/">
-            <HomePage />
-            {NavBar}
-          </Route>
-        </Switch>
-      </div>
-    </Router>
+            </Route>
+            <Route path="/login">
+              <LoginPage />
+              {NavBar}
+            </Route>
+            <Route path="/signup">
+              <SignupPage />
+              {NavBar}
+            </Route>
+            <Route path="/">
+              <HomePage />
+              {NavBar}
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+    </AuthProvider>
   );
 }
