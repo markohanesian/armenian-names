@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { Switch, Grid, Paper, Typography } from "@material-ui/core";
+import { Switch, Grid, Paper, Typography, Button } from "@material-ui/core";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 // main styling
 import "../App.css";
 // subcomponents
 import HomeButton from "../components/HomeButton";
+// Importing Firebase app config for logout button
+import app from '../base';
 
 function HomePage() {
   const [darkMode, setDarkMode] = useState(false);
@@ -55,6 +57,14 @@ function HomePage() {
               inversely. The name "Alik" pronounced "ah-leek", may be used for
               girls in the Armenian Diaspora, but used for a boy in Armenia
             </Typography>
+          </Grid>
+          <Grid className="homepage-body">
+            <Button
+              onClick={() => app.auth().signOut()}
+              color="primary"
+            >
+              Logout
+            </Button>
           </Grid>
           <Grid className="homepage-body">
             <Typography variant="body1" gutterBottom>
