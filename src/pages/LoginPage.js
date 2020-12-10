@@ -5,7 +5,8 @@ import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import '../App.css';
 // subcomponents
 import HomeButton from '../components/HomeButton';
-import Login from '../components/Login';
+// import Login from '../components/Login';
+import LoginNew from '../components/LoginNew';
 
 function LoginPage() {
   const [darkMode, setDarkMode] = useState(false);
@@ -44,7 +45,10 @@ function LoginPage() {
             <HomeButton />
           </Grid>
           <Grid className="grid-default">
-            <Login />
+            {/* <Login /> */}
+            <LoginNew />
+            <p>hello</p>
+
           </Grid>
         </Paper>
       </ThemeProvider>
