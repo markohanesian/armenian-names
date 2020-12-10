@@ -4,9 +4,11 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 // import logo from './logo.svg';
 import "./App.css";
 // page components
-import LoginPage from "./pages/LoginPage";
-import SignupPage from "./pages/SignupPage";
+// import LoginPage from "./pages/LoginPage";
+// import SignupPage from "./pages/SignupPage";
 import HomePage from "./pages/HomePage";
+import LoginNew from './components/LoginNew';
+import SignUpNew from './components/SignUpNew';
 // Firebase Authentication 
 import { AuthProvider } from './Auth';
 
@@ -49,18 +51,18 @@ export default function App() {
             </Route>
             <Route path="/generator">
               <div id="gendered-names-container">
-                {/* <GenArmMaleName />
-                <GenArmFemaleName />
-                <RandomName /> */}
+                <h1>you're on the generator page</h1>
               </div>
               {NavBar}
             </Route>
             <Route path="/login">
-              <LoginPage />
+              {/* <LoginPage /> */}
+              <LoginNew />
               {NavBar}
             </Route>
             <Route path="/signup">
-              <SignupPage />
+              {/* <SignupPage /> */}
+              <SignUpNew />
               {NavBar}
             </Route>
             <Route path="/">
