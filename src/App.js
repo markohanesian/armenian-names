@@ -9,6 +9,7 @@ import "./App.css";
 import HomePage from "./pages/HomePage";
 import LoginNew from './components/LoginNew';
 import SignUpNew from './components/SignUpNew';
+import Generator from './pages/GeneratorPage';
 // Firebase Authentication 
 import { AuthProvider } from './Auth';
 
@@ -50,9 +51,7 @@ export default function App() {
               {NavBar}
             </Route>
             <Route path="/generator">
-              <div id="gendered-names-container">
-                <h1>you're on the generator page</h1>
-              </div>
+              <Generator />
               {NavBar}
             </Route>
             <Route path="/login">
