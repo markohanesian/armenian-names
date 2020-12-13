@@ -2,8 +2,6 @@ import React from "react";
 import { Grid, Button, TextField } from "@material-ui/core";
 // additional styling
 import "../App.css";
-// Firebase app config 
-import app from '../base';
 
 const Login = () => {
     return (
@@ -14,9 +12,6 @@ const Login = () => {
                     <TextField label="Password" margin="normal" />
                     <Button href="#text-buttons" color="primary">
                         Login
-                    </Button>
-                    <Button onClick={() => app.auth().signOut()} href="#text-buttons" color="primary">
-                        Logout
                     </Button>
                 </Grid>
             </Grid>
