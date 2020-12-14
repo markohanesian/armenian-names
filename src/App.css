@@ -83,13 +83,30 @@ a:hover {
 }
 
 /* GENERATOR PAGE */
-#gendered-names-container {
+/* #gendered-names-container {
   display: flex;
   height: 200px;
   flex-direction: column;
   align-items: space-between;
   justify-content: space-between;
   padding: 1rem;
+} */
+
+#generator-favorite-icon {
+  font-size: 80px;
+  padding-right: 2rem;
+}
+
+#generator-shuffle-icon {
+  font-size: 80px;
+  padding-left: 2rem;
+}
+
+#generator-buttons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 /* NAVIGATION */
