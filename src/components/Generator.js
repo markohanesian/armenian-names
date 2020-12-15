@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // name data
-import nameData from "./Name-Data.js";
+import NameData from "./NameData.js";
 // shuffle button via material-ui icons
 import IconButton from "@material-ui/core/IconButton";
 import SvgIcon from "@material-ui/core/SvgIcon";
@@ -10,7 +10,7 @@ import '../App.css';
 
 
 // converting name data into objects
-const RandomName = nameData.name;
+const RandomName = NameData.name;
 
 function Generator() {
     const [startingName, newName] = useState('name');
