@@ -6,20 +6,20 @@ export default [
     sex: 'female',
     meaning: '"little star". Derived from the Armenian word "astgh" meaning "star" and the suffix "ig" meaning "little." Famous real-life people named Astghik Astghik in song, story & screen. Astghik is the Armenian goddess of fertility and love.',
   }, {
-      id: 1,
-      name: 'Lusine',
-      sex: 'female',
-      meaning: 'Lusine is a feminine given name derives from the Armenian “Lusin (Լուսին)”, meaning “moon”. The ancient Armenians, like the Latins, possessed two different names for the moon.'
+    id: 1,
+    name: 'Lusine',
+    sex: 'female',
+    meaning: 'Lusine is a feminine given name derives from the Armenian “Lusin (Լուսին)”, meaning “moon”. The ancient Armenians, like the Latins, possessed two different names for the moon.'
   }, {
-      id: 2,
-      name: 'Hayk', 
-      sex: 'male',
-      meaning: 'Hayk the Great (Armenian: Հայկ, Armenian pronunciation: [hajk]), or The Great Hayk, also known as Hayk Nahapet (Հայկ Նահապետ, Armenian pronunciation: [hajk nahapɛt], Hayk the "head of family" or patriarch), is the legendary patriarch and founder of the Armenian nation.'
+    id: 2,
+    name: 'Hayk',
+    sex: 'male',
+    meaning: 'Hayk the Great (Armenian: Հայկ, Armenian pronunciation: [hajk]), or The Great Hayk, also known as Hayk Nahapet (Հայկ Նահապետ, Armenian pronunciation: [hajk nahapɛt], Hayk the "head of family" or patriarch), is the legendary patriarch and founder of the Armenian nation.'
   }, {
-      id: 3,
-      name: 'Razmik',
-      sex: 'male',
-      meaning: 'little soldier/fighter'
+    id: 3,
+    name: 'Razmik',
+    sex: 'male',
+    meaning: 'little soldier/fighter'
   }
 ];
 
