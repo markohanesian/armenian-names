@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { Switch, Grid, Paper, Typography } from "@material-ui/core";
+import { Switch, Grid, Paper } from "@material-ui/core";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 // main styling
 import "../App.css";
 // subcomponents
 import SignOut from '../components/SignOut';
+import Generator from '../components/Generator';
 
 function HomePage() {
     const [darkMode, setDarkMode] = useState(false);
@@ -39,9 +40,7 @@ function HomePage() {
                         ></Switch>
                     </Grid>
                     <Grid className="grid-default">
-                        <Typography variant="h1" component="h2" gutterBottom>
-                            Generator
-                        </Typography>
+                        < Generator />
                         <SignOut />
                     </Grid>
                 </Paper>
