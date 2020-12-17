@@ -9,7 +9,8 @@ import "./App.css";
 import HomePage from "./pages/HomePage";
 import LoginNew from './components/LoginNew';
 import SignUpNew from './components/SignUpNew';
-import Generator from './pages/GeneratorPage';
+import GeneratorPage from './pages/GeneratorPage';
+
 // Firebase Authentication 
 import { AuthProvider } from './Auth';
 
@@ -51,7 +52,7 @@ export default function App() {
               {NavBar}
             </Route>
             <Route path="/generator">
-              <Generator />
+              <GeneratorPage />
               {NavBar}
             </Route>
             <Route path="/login">
