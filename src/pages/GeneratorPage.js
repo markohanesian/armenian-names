@@ -5,7 +5,7 @@ import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import "../App.css";
 // subcomponents
 import SignOut from '../components/SignOut';
-import Generator from '../components/Generator';
+import Randomizer from '../components/Randomizer';
 
 function HomePage() {
     const [darkMode, setDarkMode] = useState(false);
@@ -40,7 +40,7 @@ function HomePage() {
                         ></Switch>
                     </Grid>
                     <Grid className="grid-default">
-                        < Generator />
+                        <Randomizer />
                         <SignOut />
                     </Grid>
                 </Paper>
