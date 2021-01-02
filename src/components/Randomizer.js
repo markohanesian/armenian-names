@@ -34,6 +34,24 @@ const Randomizer = () => {
       sex: "male",
       meaning: "little soldier/fighter",
     },
+    {
+      id: 4,
+      name: "Lori",
+      sex: "female",
+      meaning: "The name Lori (Լոռի) is of Armenian origin (from Armenian 'quail'), first appeared in the 11th century when King David I Anhoghin founded the fortified city of Lori.",
+    },
+    {
+      id: 5,
+      name: "Alik",
+      sex: "female",
+      meaning: "The Armenian word for 'wave', used for both male and female",
+    },
+    {
+      id: 6,
+      name: "Siroon",
+      sex: "female",
+      meaning: "The Armenian word for 'beautiful'",
+    },
   ];
   const startingName = [{ id: 0, name: "Astghik", meaning: '"little star". Derived from the Armenian word "astgh" meaning "star" and the suffix "ig" meaning "little." Famous real-life people named Astghik Astghik in song, story & screen. Astghik is the Armenian goddess of fertility and love.',
 }];
