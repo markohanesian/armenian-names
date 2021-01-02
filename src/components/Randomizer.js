@@ -7,19 +7,44 @@ import "../App.css";
 
 const Randomizer = () => {
   const nameList = [
-    { id: 1, name: "Astghik", meaning: "little star" },
-    { id: 2, name: "Tagouhi", meaning: "Queen" },
-    { id: 3, name: "Lusine", meaning: "Moon" },
+    {
+      id: 0,
+      name: "Astghik",
+      sex: "female",
+      meaning:
+        '"little star". Derived from the Armenian word "astgh" meaning "star" and the suffix "ig" meaning "little." Famous real-life people named Astghik Astghik in song, story & screen. Astghik is the Armenian goddess of fertility and love.',
+    },
+    {
+      id: 1,
+      name: "Lusine",
+      sex: "female",
+      meaning:
+        "Lusine is a feminine given name derives from the Armenian “Lusin (Լուսին)”, meaning “moon”. The ancient Armenians, like the Latins, possessed two different names for the moon.",
+    },
+    {
+      id: 2,
+      name: "Hayk",
+      sex: "male",
+      meaning:
+        'Hayk the Great (Armenian: Հայկ, Armenian pronunciation: [hajk]), or The Great Hayk, also known as Hayk Nahapet (Հայկ Նահապետ, Armenian pronunciation: [hajk nahapɛt], Hayk the "head of family" or patriarch), is the legendary patriarch and founder of the Armenian nation.',
+    },
+    {
+      id: 3,
+      name: "Razmik",
+      sex: "male",
+      meaning: "little soldier/fighter",
+    },
   ];
-  const startingName = [{ id: 0, name: "Astghik", meaning: "little star" }];
+  const startingName = [{ id: 0, name: "Astghik", meaning: '"little star". Derived from the Armenian word "astgh" meaning "star" and the suffix "ig" meaning "little." Famous real-life people named Astghik Astghik in song, story & screen. Astghik is the Armenian goddess of fertility and love.',
+}];
 
   const [randomIndex, setRandomIndex] = React.useState(-1);
 
   const data = randomIndex !== -1 ? nameList[randomIndex] : startingName[0];
 
   return (
-    <Grid class="grid-default" container spacing={1}>
-      <Grid item xs={12}>
+    <Grid class="grid-default"  container spacing={1}>
+      <Grid class="grid-default" item xs={12}>
         <Typography variant="h2" component="h2" gutterBottom>
           {data.name}
         </Typography>
