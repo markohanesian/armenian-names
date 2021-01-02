@@ -10,7 +10,6 @@ import HomePage from "./pages/HomePage";
 import LoginNew from './components/LoginNew';
 import SignUpNew from './components/SignUpNew';
 import GeneratorPage from './pages/GeneratorPage';
-
 // Firebase Authentication 
 import { AuthProvider } from './Auth';
 
