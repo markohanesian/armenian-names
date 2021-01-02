@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import IconButton from "@material-ui/core/IconButton";
 import SvgIcon from "@material-ui/core/SvgIcon";
 // material-ui
@@ -19,7 +19,7 @@ const Randomizer = () => {
       name: "Lusine",
       sex: "female",
       meaning:
-        "Lusine is a feminine given name derives from the Armenian “Lusin (Լուսին)”, meaning “moon”. The ancient Armenians, like the Latins, possessed two different names for the moon.",
+        "A feminine given name that derives from the Armenian word for “moon”. The ancient Armenians, like the Latins, possessed two different names for the moon.",
     },
     {
       id: 2,
@@ -32,13 +32,13 @@ const Randomizer = () => {
       id: 3,
       name: "Razmik",
       sex: "male",
-      meaning: "little soldier/fighter",
+      meaning: "Little soldier/fighter",
     },
     {
       id: 4,
       name: "Lori",
       sex: "female",
-      meaning: "The name Lori (Լոռի) is of Armenian origin (from Armenian 'quail'), first appeared in the 11th century when King David I Anhoghin founded the fortified city of Lori.",
+      meaning: "The name Lori (Լոռի) is first appeared in the 11th century when King David I Anhoghin founded the fortified city of Lori.",
     },
     {
       id: 5,
