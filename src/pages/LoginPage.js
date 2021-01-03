@@ -47,8 +47,6 @@ function LoginPage() {
           <Grid className="grid-default">
             {/* <Login /> */}
             <LoginNew />
-            <p>hello</p>
-
           </Grid>
         </Paper>
       </ThemeProvider>

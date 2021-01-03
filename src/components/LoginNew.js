@@ -3,6 +3,7 @@ import { withRouter, Redirect } from "react-router";
 import app from "../base";
 // Using AuthContext for Firebase user authentication
 import { AuthContext } from "../Auth";
+import { TextField, Button, Typography, Grid } from "@material-ui/core/";
 
 // history object passed in as props
 const Login = ({ history }) => {
@@ -33,21 +34,24 @@ const Login = ({ history }) => {
   }
 
   return (
-    <div>
-      <h1>Log in</h1>
+    <Grid container class="grid-default" spacing={1}>
+      <Grid class="grid-default" item xs={12}>
+        <Typography variant="h5" gutterBottom>
+          Sign In
+        </Typography>
+      </Grid>
       <form onSubmit={handleLogin}>
-        <label>
-          Email
-          <input name="email" type="email" placeholder="Email" />
-        </label>
-        <label>
-          Password
-          <input name="password" type="password" placeholder="Password" />
-        </label>
-        <button type="submit">Log in</button>
+          <Grid class="grid-default" item xs={12}>
+            <TextField name="email" type="email" placeholder="Email" />
+          </Grid>
+          <Grid class="grid-default" item xs={12}>
+            <TextField name="password" type="password" placeholder="Password" />
+          </Grid>
+        <Grid class="grid-default" item xs={12}>
+          <Button type="submit">Submit</Button>
+        </Grid>
       </form>
-      <p>ara</p>
-    </div>
+    </Grid>
   );
 };
 

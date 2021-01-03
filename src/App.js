@@ -7,7 +7,7 @@ import "./App.css";
 // import LoginPage from "./pages/LoginPage";
 // import SignupPage from "./pages/SignupPage";
 import HomePage from "./pages/HomePage";
-import LoginNew from './components/LoginNew';
+import LoginPage from './pages/LoginPage';
 import SignUpNew from './components/SignUpNew';
 import GeneratorPage from './pages/GeneratorPage';
 // Firebase Authentication 
@@ -55,12 +55,10 @@ export default function App() {
               {NavBar}
             </Route>
             <Route path="/login">
-              {/* <LoginPage /> */}
-              <LoginNew />
+              <LoginPage />
               {NavBar}
             </Route>
             <Route path="/signup">
-              {/* <SignupPage /> */}
               <SignUpNew />
               {NavBar}
             </Route>
