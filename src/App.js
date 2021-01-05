@@ -1,6 +1,6 @@
 import React from "react";
 // navigation
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import logo from './logo.svg';
 import "./App.css";
 // page components
@@ -12,29 +12,55 @@ import SignUpNew from './components/SignUpNew';
 import GeneratorPage from './pages/GeneratorPage';
 // Firebase Authentication 
 import { AuthProvider } from './Auth';
+import Grid from '@material-ui/core/Grid';
+// Bottom Navbar 
+import BottomNavigation from '@material-ui/core/BottomNavigation';
+import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+import { makeStyles } from '@material-ui/core/styles';
+// Bottom Navbar Icons
+// import HomeIcon from '@material-ui/icons';
+// import VpnKeyIcon from '@material-ui/icons';
+// // import DnsIcon from '@material-ui/icons';
+// import FavoriteIcon from '@material-ui/icons';
+// import AddIcon from '@material-ui/icons/Add';
 
+const useStyles = makeStyles({
+  bottomNav: {
+    display: 'relative',
+    bottom: '0',
+    position: 'fixed',
+  },
+  navbutton: {
+    // display: 'flex',
+    // flexDirection: 'row'
+    padding: '0rem',
+    // margin: '0rem'
+  }
+});
 
 export default function App() {
+  const classes = useStyles();
+  const [value, setValue] = React.useState(0);
+
   const NavBar = (
-    <nav id="bottom-navigation-group">
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/signup">Signup</Link>
-        </li>
-        <li>
-          <Link to="/login">Login</Link>
-        </li>
-        <li>
-          <Link to="/generator">Generator</Link>
-        </li>
-        <li>
-          <Link to="/favorites">Favorites</Link>
-        </li>
-      </ul>
-    </nav>
+    <Grid container>
+      <Grid item xs={12}>
+        <BottomNavigation
+          value={value}
+          onChange={(event, newValue) => {
+            setValue(newValue);
+          }}
+          showLabels
+          className={classes.bottomNav}
+        >
+          <BottomNavigationAction className={classes.navbutton} href="/" label="Home"  />
+          <BottomNavigationAction className={classes.navbutton} href="/signup" label="Sign Up" />
+          <BottomNavigationAction className={classes.navbutton} href="/login" label="Login" />
+          <BottomNavigationAction className={classes.navbutton} href="/generator" label="Names" />
+          <BottomNavigationAction className={classes.navbutton} href="/favorites" label="Favs"  />
+          </BottomNavigation> 
+      </Grid>
+    </Grid>
   );
 
   return (
