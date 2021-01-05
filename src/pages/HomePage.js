@@ -19,7 +19,7 @@ function HomePage() {
       <ThemeProvider theme={theme}>
         <Paper
           style={{
-            height: "100vh",
+            height: "90vh",
             display: "flex",
             flexDirection: "column",
             // padding: "1rem",
