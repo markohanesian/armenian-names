@@ -48,7 +48,7 @@ const Login = ({ history }) => {
             <TextField name="password" type="password" placeholder="Password" />
           </Grid>
         <Grid class="grid-default" item xs={12}>
-          <Button type="submit">Submit</Button>
+          <Button type="submit" variant="contained" color="primary">Submit</Button>
         </Grid>
       </form>
     </Grid>
