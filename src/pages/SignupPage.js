@@ -5,7 +5,7 @@ import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import '../App.css';
 // subcomponents
 import HomeButton from '../components/HomeButton';
-import Signup from '../components/Signup';
+import SignUpNew from '../components/SignUpNew';
 
 function SignupPage() {
   const [darkMode, setDarkMode] = useState(false);
@@ -47,7 +47,7 @@ function SignupPage() {
             <Typography variant="subtitle1" gutterBottom>
               Sign up to save your favorite baby names so you don't forget them before your baby is born
             </Typography>
-            <Signup />
+            <SignUpNew />
           </Grid>
         </Paper>
       </ThemeProvider>
