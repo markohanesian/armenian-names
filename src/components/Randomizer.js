@@ -4,55 +4,10 @@ import SvgIcon from "@material-ui/core/SvgIcon";
 // material-ui
 import { Typography, Grid } from "@material-ui/core";
 import "../App.css";
+import { NameData } from "./NameData";
 
 const Randomizer = () => {
-  const nameList = [
-    {
-      id: 0,
-      name: "Astghik",
-      sex: "female",
-      meaning:
-        '"little star". Derived from the Armenian word "astgh" meaning "star" and the suffix "ig" meaning "little." Famous real-life people named Astghik Astghik in song, story & screen. Astghik is the Armenian goddess of fertility and love.',
-    },
-    {
-      id: 1,
-      name: "Lusine",
-      sex: "female",
-      meaning:
-        "A feminine given name that derives from the Armenian word for “moon”. The ancient Armenians, like the Latins, possessed two different names for the moon.",
-    },
-    {
-      id: 2,
-      name: "Hayk",
-      sex: "male",
-      meaning:
-        'Hayk the Great (Armenian: Հայկ, Armenian pronunciation: [hajk]), or The Great Hayk, also known as Hayk Nahapet (Հայկ Նահապետ, Armenian pronunciation: [hajk nahapɛt], Hayk the "head of family" or patriarch), is the legendary patriarch and founder of the Armenian nation.',
-    },
-    {
-      id: 3,
-      name: "Razmik",
-      sex: "male",
-      meaning: "Little soldier/fighter",
-    },
-    {
-      id: 4,
-      name: "Lori",
-      sex: "female",
-      meaning: "The name Lori (Լոռի) is first appeared in the 11th century when King David I Anhoghin founded the fortified city of Lori.",
-    },
-    {
-      id: 5,
-      name: "Alik",
-      sex: "female",
-      meaning: "The Armenian word for 'wave', used for both male and female",
-    },
-    {
-      id: 6,
-      name: "Siroon",
-      sex: "female",
-      meaning: "The Armenian word for 'beautiful'",
-    },
-  ];
+  const nameList = NameData;
   const startingName = [{ id: 0, name: "Astghik", meaning: '"little star". Derived from the Armenian word "astgh" meaning "star" and the suffix "ig" meaning "little." Famous real-life people named Astghik Astghik in song, story & screen. Astghik is the Armenian goddess of fertility and love.',
 }];
 
