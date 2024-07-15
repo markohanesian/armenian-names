@@ -15,7 +15,7 @@ const Randomizer = () => {
   const data = randomIndex !== -1 ? nameList[randomIndex] : startingName[0];
 
   return (
-    <Grid class="grid-default"  container spacing={1}>
+    <Grid class="grid-default" container spacing={1}>
       <Grid class="grid-default" item xs={12}>
         <Typography variant="h2" component="h2" gutterBottom>
           {data.name}
