@@ -4,7 +4,7 @@ import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 // main styling
 import "../App.css";
 // subcomponents
-import SignOut from '../components/SignOut';
+// import SignOut from '../components/SignOut';
 import Randomizer from '../components/Randomizer';
 
 function HomePage() {
@@ -41,7 +41,7 @@ function HomePage() {
                     </Grid>
                     <Grid className="grid-default">
                         <Randomizer />
-                        <SignOut />
+                        {/* <SignOut /> */}
                     </Grid>
                 </Paper>
             </ThemeProvider>
