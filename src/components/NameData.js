@@ -1,5 +1,5 @@
 // temporary list of 4 names
-export default [
+export const NameData = [
   {
     id: 0,
     name: 'Astghik',
