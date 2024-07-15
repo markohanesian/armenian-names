@@ -8,8 +8,7 @@ import { NameData } from "./NameData";
 
 const Randomizer = () => {
   const nameList = NameData;
-  const startingName = [{ id: 0, name: "Astghik", meaning: '"little star". Derived from the Armenian word "astgh" meaning "star" and the suffix "ig" meaning "little." Famous real-life people named Astghik Astghik in song, story & screen. Astghik is the Armenian goddess of fertility and love.',
-}];
+  const startingName = nameList[0];
 
   const [randomIndex, setRandomIndex] = React.useState(-1);
 
@@ -20,6 +19,9 @@ const Randomizer = () => {
       <Grid class="grid-default" item xs={12}>
         <Typography variant="h2" component="h2" gutterBottom>
           {data.name}
+        </Typography>
+        <Typography variant="subtitle" component="h2" gutterBottom>
+          {data.sex}
         </Typography>
         <Typography variant="body1" gutterBottom>
           {data.meaning}
