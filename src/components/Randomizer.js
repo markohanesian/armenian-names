@@ -12,7 +12,7 @@ const Randomizer = () => {
 
   const [randomIndex, setRandomIndex] = React.useState(-1);
 
-  const data = randomIndex !== -1 ? nameList[randomIndex] : startingName[0];
+  const data = randomIndex !== -1 ? nameList[randomIndex] : startingName;
 
   return (
     <Grid class="grid-default" container spacing={1}>
