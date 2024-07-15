@@ -14,8 +14,10 @@ Press the button to generate a random name
 * React
 
 ## Planned Features/Outstanding Issues
-* Name filtering
-* Female names
+* A LOT more names
+* Functional signup/login
+* Saved names favorites page
+* Name filtering by sex, first letter, etc.
 
 ## Authors
 * [Mark Ohanasian](https://github.com/markohanesian) 
