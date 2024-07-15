@@ -7,8 +7,8 @@ import "./App.css";
 // import LoginPage from "./pages/LoginPage";
 // import SignupPage from "./pages/SignupPage";
 import HomePage from "./pages/HomePage";
-import LoginPage from './pages/LoginPage';
-import SignUpNew from './components/SignUpNew';
+// import LoginPage from './pages/LoginPage';
+// import SignUpNew from './components/SignUpNew';
 import GeneratorPage from './pages/GeneratorPage';
 // Firebase Authentication 
 import { AuthProvider } from './Auth';
@@ -54,8 +54,6 @@ export default function App() {
           className={classes.bottomNav}
         >
           <BottomNavigationAction className={classes.navbutton} href="/" label="Home"  />
-          <BottomNavigationAction className={classes.navbutton} href="/signup" label="Sign Up" />
-          <BottomNavigationAction className={classes.navbutton} href="/login" label="Login" />
           <BottomNavigationAction className={classes.navbutton} href="/generator" label="Names" />
           <BottomNavigationAction className={classes.navbutton} href="/favorites" label="Favs"  />
           </BottomNavigation> 
@@ -78,14 +76,6 @@ export default function App() {
             </Route>
             <Route path="/generator">
               <GeneratorPage />
-              {NavBar}
-            </Route>
-            <Route path="/login">
-              <LoginPage />
-              {NavBar}
-            </Route>
-            <Route path="/signup">
-              <SignUpNew />
               {NavBar}
             </Route>
             <Route path="/">
